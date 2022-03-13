@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cooking cite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="nav">
+        <img id="logoImg" src="./assets/images/logo.png" alt="logoCite">
+        <ul id="parentOfLi">
+            <li id="allRecipiesPage"><a href="#allRecipiesPage">Vsichki recepti</a></li>
+            <li id="favRecipiesPage"><a href="#favRecipiesPage">Lybimi recepti</a></li>
+            <li id="makeRecipiesPage"><a href="#makeRecipiesPage">Suzdai recepta</a></li>
+            <li id="myProfilePage"><a href="#myProfilePage">Moyat profil</a></li>
+        </ul>
+        <img id="userImg" alt="Profile picture of user">
+    </nav>
+    <div id="search">
+        <div id="searchName">
+            <lable> Tursi po ime na recepta: </lable>
+            <input type="text" id="imeInput">
+        </div>
+        <div id="searchIngr">
+            <lable> Tursi po sustavka: </lable>
+           
+        </div>
+    </div>
+    <div id="main">
+        <div id="recipiesP"></div>
+        <div id="favP"></div>
+        <div id="makeP">
+            <br>
+            <form id="formOfSubmit">
+                <lable> Ime na recepta: </lable>
+                <input type="text" id="nameForm">
+                <lable> Sustavki: </lable>
+                <input type="text" id="sustavkiForm">
+                <lable> Link kum recepta: </lable>
+                <input type="text" id="linkForm">
+                <lable> Snimka url: </lable>
+                <input type="text" id="imgForm">
+                <button id="buttonForm" type="submit">Dobavi!</button>
+            </form>
+        </div>
+        <div id="profileP">
+            <br>
+            <form id="SubmitProfile">
+                <lable> Ime na potrebitelq: </lable>
+                <input type="text" id="nameProfile">
+                <lable> Godini: </lable>
+                <input type="text" id="ageForm">
+                <lable> Adres: </lable>
+                <input type="text" id="adresForm">
+                <lable> Snimka: </lable>
+                <input type="text" id="imgProfile">
+                <button id="buttonProfile" type="submit">Suzdai!</button>
+            </form>
+            <br>
+            <br>
+            <div id="tablicaRecepti">
+            </div>
+        </div>
+        <div id="errorP"></div>
+
+    </div>
+    <footer id="footerP">
+        <div>
+            <div>Website created by: Plamena Aleksandrova</div>
+            <br>
+            <div>Alrights reserved C 2021</div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/recipiesData.js"></script>
+    <script src="./assets/js/model/recipies.js"></script>
+    <script src="./assets/js/model/person.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
